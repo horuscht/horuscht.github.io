@@ -2,8 +2,6 @@
 <!-- saved from url=(0043)https://squarebox.com.hk/event-confirm.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -19,29 +17,42 @@
 	<meta property="al:android:app_name" content="Viu" />
 	<meta name="viewport" content="width=device-width, user-scalable=0" />
     <title>EXPO TEST</title>
- 
-    <!-- implement javascript on web page that first first tries to open the deep link
-        1. if user has app installed, then they would be redirected to open the app to specified screen
-        2. if user doesn't have app installed, then their browser wouldn't recognize the URL scheme
-        and app wouldn't open since it's not installed. In 1 second (1000 milliseconds) user is redirected
-        to download app from app store.
-     -->
-    <script>
-    window.onload = function() {
-    <!-- Deep link URL for existing users with app already installed on their device -->
-        window.location = 'expo://10.112.125.170:19000/--/socialevent/21736275';
-    <!-- Download URL (TUNE link) for new users to download the app -->
-        setTimeout("window.location = 'expo://10.112.125.170:19000/--/socialevent/21736275';", 1000);
-    }
-    </script>
-</head>
-<body>
 
- 
-    <!-- button to Open App to specific screen for existing app users -->
-    <form action="expo://10.112.125.170:19000/--/socialevent/21736275" target="_blank">
-        <input type="submit" value="Open App" />
-    </form>
- 
-</body>
-</html>
+   
+    <!-- Bootstrap core CSS -->
+    <link href="./KidsOnTrack_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./KidsOnTrack_files/coverb.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+         <h3 class="masthead-brand">KidsOnTrack</h3>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <a class="btn btn-primary" role="button" href="expo://10.112.125.170:19000/--/socialevent/21736275" target="_blank">Go to Event</a>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./KidsOnTrack_files/query-3.2.1.slim.min.js.下載" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/jquery-slim.min.js"><\/script>')</script><script src="./KidsOnTrack_files/jquery-slim.min.js.下載"></script>
+    <script src="./KidsOnTrack_files/popper.min.js.下載"></script>
+    <script src="./KidsOnTrack_files/bootstrap.min.js.下載"></script>
+  
+
+</body></html>
