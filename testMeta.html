@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="483026605731201">
+<meta property="al:ios:url" content="openrice://hk/zh/hongkong/r-%E5%A5%87%E8%8F%AF%E9%A4%85%E5%AE%B6-%E5%A4%A7%E8%A7%92%E5%92%80-%E6%B8%AF%E5%BC%8F-%E5%94%90%E9%A4%85-r122531">
+<meta property="al:ios:app_store_id" content="310663323">
+<meta property="al:ios:app_name" content="OpenRice">
+<meta property="al:android:url" content="openrice://s.openrice.com/QrbS0eyy0G0">
+<meta property="al:android:package" content="com.openrice.android">
+<meta property="al:android:app_name" content="OpenRice">
   </head>
   <script>
     window.onload = function () {
 		var meta = document.createElement('meta');
 		meta.setAttribute('property',"al:ios:url");
 		meta.content = "kot://socialevent/21736275";
+		var meta2 = document.createElement('meta');
+		meta2.setAttribute('property',"al:ios:app_store_id");
+		meta2.content = "310663323";
+		var meta3 = document.createElement('meta');
+		meta3.setAttribute('property',"al:ios:app_name");
+		meta3.content = "OpenRice";
 		document.getElementsByTagName('head')[0].appendChild(meta);
+		document.getElementsByTagName('head')[0].appendChild(meta2);
       var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
       if (/windows phone/i.test(userAgent)) {
