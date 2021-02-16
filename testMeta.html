@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <script>
+    window.onload = function () {
+		  var meta = document.createElement('meta');
+		meta.setAttribute('property',"al:ios:url");
+		meta.content = "kot://socialevent/21736275";
+		document.getElementsByTagName('head')[0].appendChild(meta);
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/windows phone/i.test(userAgent)) {
+        window.location.replace("https://kidsontrack.hk");
+      }else if (/android/i.test(userAgent)) {
+        window.location.replace("https://play.google.com/store/apps/details?id=innovthoughts.kidsontrack");
+      }else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.replace("https://apps.apple.com/app/id1525688803");
+        <!-- https://apps.apple.com/app/id1525688803 -->
+        <!-- itms-apps://itunes.apple.com/app/id1525688803 -->
+      }else{
+        window.location.replace("https://kidsontrack.hk");
+      }
+    };
+  </script>
+</html>
